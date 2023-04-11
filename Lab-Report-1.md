@@ -17,9 +17,8 @@ Now you're done.
  
  
  ## Trying some commands 
-   You're now connected to a remote server. You should see something like this: 
-  ![Image](Todo) 
- Try out the typical commands cd, ls, pwd, mkdir, cp. 
+   You're now connected to a remote server. Try out the typical commands cd, ls, pwd, mkdir, cp. Here is an example: 
+   ![Image](Todo) 
  You should be able to play around with the files on the computer you're connected to. 
  To log out of the remote server, press Crtl-D.
    
