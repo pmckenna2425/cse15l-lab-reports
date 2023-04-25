@@ -26,5 +26,6 @@ Now you have VS Code instaled!
 
 ## Other Lab 1 pages 
 [Index](https://github.com/pmckenna2425/cse15l-lab-reports/index.html)
+
 [DoNow](https://github.com/pmckenna2425/cse15l-lab-reports/donow.html)
 
