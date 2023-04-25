@@ -16,7 +16,7 @@ Now you have VS Code instaled!
  
  
  
- ## Trying some commands 
+## Trying some commands 
    You're now connected to a remote server. Try out the typical commands ``cd, ls, pwd, mkdir, cp``. Here is an example: 
   ![Remote Commands](RemoteCmds.png) 
  You should be able to play around with the files on the computer you're connected to. 
