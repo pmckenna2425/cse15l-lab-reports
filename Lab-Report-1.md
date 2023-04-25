@@ -21,4 +21,10 @@ Now you have VS Code instaled!
   ![Remote Commands](RemoteCmds.png) 
  You should be able to play around with the files on the computer you're connected to. 
  To log out of the remote server, press Crtl-D.
-   
+
+
+
+## Other Lab 1 pages 
+[Index](https://github.com/pmckenna2425/cse15l-lab-reports/index.html)
+[DoNow](https://github.com/pmckenna2425/cse15l-lab-reports/donow.html)
+
