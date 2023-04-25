@@ -1,4 +1,7 @@
 Hello World!
+
+[Lab Report 1](https://pmckenna2425.github.io/cse15l-lab-reports/Lab-Report-1.html)
+
 # **Check This**
 
 **bold** 
