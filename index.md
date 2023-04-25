@@ -1,8 +1,10 @@
 Hello World!
-#**Check This**
-do it now do it now
+# **Check This**
+
 **bold** 
+
 *Italic*
+
 # Heading 1 
 
 [CrunchyRoll](https://crunchyroll.com)
