@@ -12,11 +12,11 @@ The blank server looks just like this
 ![BlankServer](https://github.com/pmckenna2425/cse15l-lab-reports/blob/main/StringServer%20base.png)
 
 And after performing `add-method?s=Hello`, we get this: 
-![StringServerHello](https://github.com/pmckenna2425/cse15l-lab-reports/block/main/StringServerHello.png)
+![StringServerHello](https://github.com/pmckenna2425/cse15l-lab-reports/blob/main/StringServerHello.png)
 
 another instance, using `add-method?s=How are you`:
-![StringServerHowAreYou](https://github.com/pmckenna2425/cse15l-lab-reports/block/main/StringServerHowAreYou.png)
+![StringServerHowAreYou](https://github.com/pmckenna2425/cse15l-lab-reports/blob/main/StringServerHowAreYou.png)
 
 Finally, `add-method?s=Go away spongebob`:
-![StringServerGoAway](https://github.com/pmckenna2425/cse15l-lab-reports/block/main/StringServerGoAway.png)
+![StringServerGoAway](https://github.com/pmckenna2425/cse15l-lab-reports/blob/main/StringServerGoAway.png)
 
