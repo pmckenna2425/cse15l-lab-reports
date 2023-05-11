@@ -68,9 +68,9 @@ However, once we input `arr` with several elements, we see the symptom:
 ![Symptom](ArrayTest1.png) 
 
 
-The bug in the initial method was that as it goes through the `arr`, setting the first elements to the last elements, it doesn't also replace the last elements with the first elements. So by the time it is more than halfway through `arr`, the earlier elements in the first half have already already been changed. 
+The bug in the initial method is that as it goes through the `arr`, setting the first elements to the last elements, it doesn't also replace the last elements with the first elements. So by the time it is more than halfway through `arr`, the earlier elements in the first half have already already been changed. 
 
-To fix this bug, I changed the `reverseInPlace` method to also update the elements towards the end of `arr`, so this time, instead of merely *changing* elements of `arr`, `reverseInPlace` is actually *swapping* them. 
+To fix this bug, I changed the `reverseInPlace` method to also update the elements towards the end of `arr`, so this time, instead of merely *changing* elements of `arr`, `reverseInPlace` is actually *swapping* them. Note: now `reverseInPlace` doesn't even need to iterate all the way through `arr`; it only needs to go halfway and `arr` is already reversed!
 ```
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length/2; i += 1) {
