@@ -83,3 +83,8 @@ This new code creates a new placeholder `int` called `num` to temporarily store 
 
 As we can see, `reverseInPlace` now passes all tests. 
 ![Fixed](ArrayTest2.png) 
+
+
+
+# Part 3
+So before weeks 2 and 3 I knew nothing about `urls`. Now I when I see a `url`, I see the `domain`, `path`, `query` and `anchor` which I can actually now type in instead of depending on copying `urls` all the time. In addition, I learned how to start a simple online `server` and write methods for what should happen when different `paths` and `querys` are requested: the `add-message?s=<String>` from **part 1**, for instance. 
