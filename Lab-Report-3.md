@@ -14,5 +14,10 @@ In this example, we see that `technical/Government` has 6 files, but only two co
 [source](https://docs.oracle.com/cd/E19504-01/802-5826/6i9iclf5k/index.html)
 
 
+## `grep -c` to output count of matching lines only 
 
+![Image3](grep-c.png)
+In this example 
+
+[source](https://en.wikibooks.org/wiki/Grep)
 
