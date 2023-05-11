@@ -25,3 +25,17 @@ Finally, `/add-method?s=Go away spongebob`:
 ![StringServerGoAway](https://github.com/pmckenna2425/cse15l-lab-reports/blob/main/StringServerGoAway.png)
 Now, messages has 3 elements, the newest being `"Go away spongebob"`. 
 
+
+
+## Part 2: 
+For this part, 
+Choose one of the bugs from lab 3.
+
+Provide:
+1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+2. An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+3. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+4. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+5. 
+Briefly describe why the fix addresses the issue.
+
