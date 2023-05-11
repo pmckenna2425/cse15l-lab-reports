@@ -39,7 +39,7 @@ Provide:
  
 Briefly describe why the fix addresses the issue.
 
-So for part 2, the bug I'll focus on is the `reverseInPlace` method in `ArrayExampels`:
+So for part 2, the bug I'll focus on is the `reverseInPlace` method in `ArrayExamples`:
 ```
   // Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
@@ -48,4 +48,38 @@ So for part 2, the bug I'll focus on is the `reverseInPlace` method in `ArrayExa
     }
   }
 ```
+Now in the initial test in which `arr` has only 1 element `reverseInPlace` passes: 
+```
+public class ArrayTests {
+	@Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+ 	@Test 
+	public void testReverseInPlace2() {
+    int[] input1 = {1,2,3,4,5,6,7};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{7,6,5,4,3,2,1}, input1);
+	}
+```
+However, once we input `arr` with several elements, we see the symptom: 
+![Symptom](ArrayTest1.png) 
 
+The bug in the initial method was that as it goes through the `arr`, setting the first elements to the last elements, it doesn't also replace the last elements with the first elements. So by the time it is more than halfway through `arr`, the earlier elements in the first half have already already been changed. 
+
+To fix this bug, I changed the `reverseInPlace` method to also update the elements towards the end of `arr`, so this time, instead of merely *changing* elements of `arr`, `reverseInPlace` is actually *swapping* them. 
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i += 1) {
+      int num = arr[i];
+      arr[i] = arr[arr.length - 1 - i];
+      arr[arr.length - 1 - i] = num; 
+    }
+  } 
+```
+This new code creates a new placeholder `int` called `num` to temporarily store the value of `arr[i]`, so that after changing `arr[i]` to be `arr[arr.length - 1 - i]`, the `reserveInPlace` method can also set `arr[arr.length - 1 - i]` to be what was originally `arr[i]`, thereby "switching" them. 
+
+As we can see, `reverseInPlace` now passes all tests. 
+![Fixed](ArrayTest2.png) 
