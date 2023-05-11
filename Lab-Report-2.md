@@ -32,10 +32,20 @@ For this part,
 Choose one of the bugs from lab 3.
 
 Provide:
-1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
-2. An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
-3. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-4. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
-5. 
+* A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+* An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+* The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+* The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+ 
 Briefly describe why the fix addresses the issue.
+
+So for part 2, the bug I'll focus on is the `reverseInPlace` method in `ArrayExampels`:
+```
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
 
