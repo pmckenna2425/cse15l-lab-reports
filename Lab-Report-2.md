@@ -9,7 +9,7 @@ The Code:
 ![Code](StringServerCode.png)
 
 The blank server looks just like this
-![BlankServer](StringServer base.png)
+![BlankServer](StringServerBlank.png)
 
 And after performing `/add-method?s=Hello`, we get this: 
 ![StringServerHello](StringServerHello.png)
