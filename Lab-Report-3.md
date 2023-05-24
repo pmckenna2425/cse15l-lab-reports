@@ -1,8 +1,8 @@
 # Lab Report 3: Researching Commands
-For this lab report I'll research grep alternatives and options. 
+For this lab report I'll research `grep` alternatives and options. 
 
 ## `grep` as a filter for `ls`: 
-By performing the usual `ls` command to list the contents of a path and then adding `| grep <String>`, we can filter out files that don't contain that string. Here's two examples from `./technical`: 
+By performing the usual `ls` command to list the contents of a path and then adding `| grep <String>`, we return only the files whose names contain `<String>`. Here's two examples from `./technical`: 
 ![Image1](grepfilter.png) 
 In this example, we can see that `technical/911report` has many files but only one containing `"preface"`. What the command
 `ls technical/911report | grep "preface"` did is filter the `ls` command for only those files containing `"preface"`. 
@@ -19,5 +19,7 @@ In this example, we see that `technical/Government` has 6 files, but only two co
 ![Image3](grep-c.png)
 In this example 
 
-[source](https://en.wikibooks.org/wiki/Grep)
+[Grep](https://en.wikibooks.org/wiki/Grep)
+
+
 
