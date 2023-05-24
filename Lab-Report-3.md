@@ -15,8 +15,8 @@ In this example, we see that `technical/Government` has 6 files, but only two co
 
 
 ## `grep -c` to output count of matching lines only 
-
-![Image3](grep-c.png)
+By adding `-c` to our usual `grep` command, `grep -c <String>we output the count of the lines containing the 
+![Image3](grep-c.)
 In this example 
 
 [Grep](https://en.wikibooks.org/wiki/Grep)
