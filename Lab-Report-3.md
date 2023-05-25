@@ -15,7 +15,7 @@ In this example, we see that `technical/Government` has 6 files, but only two co
 
 
 ## `grep -c` to output count of matching lines only 
-By adding `-c` to our usual `grep` command, `grep -c <String>we output the count of the lines containing the 
+By adding `-c` to our usual `grep` command, `grep -c <String>`, we output the count of the lines containing the String. 
 ![Image3](grep-c.png)
 In this example, we see that path `technical/government/Media/5_Legal_Groups.txt` has 60 lines and 510 words. By performing 
 `grep -c "Legal" technical/government/Media/5_Legal_Groups.txt`, we get the exact number of lines in the `5_Legal_Groups.txt` containing the 
