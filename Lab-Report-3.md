@@ -51,4 +51,4 @@ Let's try another example with a different String, in `find-results.txt`.
 Here I first counted the total number of lines containing the non-case-sensitive word `"legal"` in `find-results.txt`. Then I did the same with the word `"fund"`. Next I performed the command `grep -i -e "legal" -e "fund" -c find-results.txt`, essentially combining the two previous commands into 1. I got the sum of the two first commands, so I successfully got all the lines containing either `"legal"` or `"fund"` in `find-results.txt`. Note that I included `-i` to ignore cases, and `-c` to once again return only the count for the sake of simplicity. 
 *Note* in the case that a line contains both of the patterns, that line would only be included once. In the previous exmaple we see that no line contained both `"legal"` and `"fund"` because the third `grep` command returned the some of the first two `grep` commands. If it was less than the sum, we could deduce that both patterns appeared together on some lines. 
 
-For this `-e` option, I actually asked chatgpt for some ideas, and I got -e, which I liked. 
+[Grep](https://en.wikibooks.org/wiki/Grep)
