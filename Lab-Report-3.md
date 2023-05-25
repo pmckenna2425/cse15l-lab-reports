@@ -41,3 +41,14 @@ So we conclude that `"aid"` occurs only 5 times in lowercase in `find-results.tx
 [Grep](https://en.wikibooks.org/wiki/Grep)
 
 
+## `-e` to use more patterns with `grep`
+We just saw how to ignore cases in the case of `"aid"` in `find-results.txt`. However, theres another, albeit less efficient way to get the same result: adding `-e <String>` to add different patterns, in this case, case patterns. This allows us to search for all lines containing `"aid"` in several different cases: 
+![Image 7](grep-e.png)
+On the first try I did `grep -e "aid" -e "Aid" -c find-results.txt` and got 15, meaning I all but 1 case of `"aid"` in `find-results.txt` are either `"aid"` or `"Aid"` with a capital A. As we see in the second try, the last case of `"aid" is in all caps. With `-e` I was able to search for multiple patterns at once, instead of performing multiple `grep` commands. Note also that I'm combining this with `-c` for the sake of a simple quantitative answer. 
+
+Let's try another example with a different String, in `find-results.txt`. 
+![Image 8](grep-e-2.png) 
+Here I first counted the total number of lines containing the non-case-sensitive word `"legal"` in `find-results.txt`. Then I did the same with the word `"fund"`. Next I performed the command `grep -i -e "legal" -e "fund" -c find-results.txt`, essentially combining the two previous commands into 1. I got the sum of the two first commands, so I successfully got all the lines containing either `"legal"` or `"fund"` in `find-results.txt`. Note that I included `-i` to ignore cases, and `-c` to once again return only the count for the sake of simplicity. 
+*Note* in the case that a line contains both of the patterns, that line would only be included once. In the previous exmaple we see that no line contained both `"legal"` and `"fund"` because the third `grep` command returned the some of the first two `grep` commands. If it was less than the sum, we could deduce that both patterns appeared together on some lines. 
+
+For this `-e` option, I actually asked chatgpt for some ideas, and I got -e, which I liked. 
