@@ -28,4 +28,16 @@ Firstly, we see that the file contains 21 lines. Then I play around `grep -c <St
 [Grep](https://en.wikibooks.org/wiki/Grep)
 
 
+## `grep -i` to ignore case. 
+In the previous example of `-c`, we saw that only one line contains `"service"` in `grep-Legal.txt`. However, if one was looking directly at the lines that I printed out at the end, it may look like 3 lines contain `"service"`. This is because the `grep` command is case-sensitive and only 1 line contained a lower-case `"service"` String. However, there is a way to get around this! If I were to add `-i` to my `grep` command from before, then it would ignore case differences. 
+![Image5](grep-i.png)
+As we can see, the command `grep -i -c "service" grep-Legal.txt` returns 3, including all lines containing the String `"service"` in a non-case-sensitive manner. 
+
+Let's try with some other words in `find-results.txt`.
+![Image6](grep-i-2.png)
+As we can see, `grep -c "research" find-results.txt` and the same command include `-i` both returned the same number, so `"research"` always occurs in lines of `find-results.txt`. However, only 5 lines in `find-results.txt` contained `"aid"` in lowercase, but 16 lines contained the word `"aid"`. We see this becuase `grep -c "aid" find-results.txt` returns 5 while `grep -i -c "aid" find-results.txt` returns 16. 
+So we conclude that `"aid"` occurs only 5 times in lowercase in `find-results.txt` but 16 times in total non-case-sensitive. 
+
+[Grep](https://en.wikibooks.org/wiki/Grep)
+
 
