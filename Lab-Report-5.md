@@ -43,7 +43,7 @@ public class Read {
  I'm working on VSCode on my mac book pro. 
  I'm trying to write a program that reads the first line of a file and prints it out. When the file has a first line my method is runnning
  as expected but when I try to use an empty file I'm getting an IndexOutOfBounds Exception: 
-![Error]() 
+![Error](Error-bash.png) 
 
 
 **TA:** 
@@ -51,7 +51,7 @@ public class Read {
  
  **Student:** 
   Yeah my bash script is pretty simple though – it just compiles and runs my file – so I doubt it's causing any error. 
-![java]()
+![java](Error-java.png)
 
 **TA:**
  So from the `Index 0 out of bounds for length 0`, it seems that your method isn't sufficiently taking into account whether the file 
@@ -60,7 +60,7 @@ public class Read {
 **Student:**
  Ah I got it, thanks. I was putting the contents of the file into a list and then printing out the element at index 0 without even 
  checking that the list had an index 0. (I mistakenly associated an empty list with one still having an index 0). 
-![Solution]()
+![Solution](Fixed.png)
 
 **TA:** 
  No problem! please do hesitate in the future to waste our time with your incompetence. 
@@ -145,5 +145,6 @@ know before. It could be a technical topic we addressed specifically, something 
 you learned from a tutor or classmate, and so on. It doesn’t have to be specifically related to a lab writeup, we just want to hear about 
 cool things you learned!
 
-So 
+So the biggest thing that I learned from my lab experience is how to use the command line to accomplish so much more than just compile. For instance, to use vim to make quick edits to my code directly, and to use git to edit and push things to my github repositories. 
+In addition, knowing simple bash scripts is really helpful and something I didn't know how to do before. For instance, using JUnit can be exhausting due to constantly needing to find and copy the right compiler and runner commands. But I could do that all at once and not need anything else by just putting those commands into a simple bash script and running that each time. 
 
