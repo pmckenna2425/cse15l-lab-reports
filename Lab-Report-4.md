@@ -38,7 +38,7 @@ existing `lab7` directory and contents.
 
 6. To compile the files, I pressed `Crtl-r` to access my bash history, and then I typed in `javac` and hit `<enter>` to locate the 
 appropriate compiler command, `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`, from ealier. Then hit `<enter>` to 
-compile. Now to run the tests, I once againpressed `Crtl-r` to access my bash history, and this time typed in `java -cp` to locate and run 
+compile. Now to run the tests, I once again pressed `Crtl-r` to access my bash history, and this time typed in `java -cp` to locate and run 
 the appropriate `java -cp .;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore ListExamplesTests`command 
 from earlier and hit `<enter>`. As we can see, the tests failed. 
 ![lab7 failed tests](lab7-test-fail.png)
