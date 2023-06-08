@@ -29,8 +29,7 @@ used instead of `index2` in the final loop in `merge`)
 existing `lab7` directory and contents. 
 3. To get a fresh start I re-forked the [lab 7 repo](https://github.com/ucsd-cse15l-s23/lab7).
 4. Now the task starts. 
-5. First step is to `ssh` into my `ieng6` account. Note that I no longer need to type in my password as earlier in this lab we generated
-`ssh keys` for our `ieng6` accounts. 
+5. First step is to `ssh` into my `ieng6` account. In the terminal, this is accomplished, for me, with the command `ssh cs15lsp23gl@ieng6.ucsd.edu`, `<enter>`. Note that I no longer need to type in my password as earlier in this lab we generated `ssh keys` for our `ieng6` accounts. 
 ![lab7 ssh](lab7-ssh.png)
 
 5. Next step is to clone the fork of the `lab7` repository on my account. I accomplished this with the command 
@@ -64,10 +63,4 @@ Obviously I performed `<enter>` after each command.
 ![lab7-commit-push](lab7-commit-push.png)
 As we can see, I was having some trouble with password authentication for my first two push attempts. To get around this, I created a temporary personal access token on GitHub just for this task. To do this I went to my GitHub account > Settings > Developer Settings > Personal access tokens > Generate new token. All I wanted to use this token for was to `push` to my repository, so I only selected the `repo` scope for this token, and generated it. Then it was as simple as copying the token, running `git push` again, and this time pasting the token instead of my account password. As we see in the above image, my token worked and I successfully pushed my changes to my forked `lab7` repository. 
 
-
-
-
-
-
-
-
+This concludes Lab7. 
