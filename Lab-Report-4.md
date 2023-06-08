@@ -63,4 +63,4 @@ Obviously I performed `<enter>` after each command.
 ![lab7-commit-push](lab7-commit-push.png)
 As we can see, I was having some trouble with password authentication for my first two push attempts. To get around this, I created a temporary personal access token on GitHub just for this task. To do this I went to my GitHub account > Settings > Developer Settings > Personal access tokens > Generate new token. All I wanted to use this token for was to `push` to my repository, so I only selected the `repo` scope for this token, and generated it. Then it was as simple as copying the token, running `git push` again, and this time pasting the token instead of my account password. As we see in the above image, my token worked and I successfully pushed my changes to my forked `lab7` repository. 
 
-This concludes Lab7. 
+This concludes **Lab Report 4**. 
