@@ -34,28 +34,35 @@ existing `lab7` directory and contents.
 ![lab7 ssh](lab7-ssh.png)
 
 5. Next step is to clone the fork of the `lab7` repository on my account. I accomplished this with the command 
-`git clone https://github.com/pmckenna2425/lab7)`.  
+`git clone https://github.com/pmckenna2425/lab7)`, `<enter>`.  
 ![cloning lab7 repository](lab7-clone.png)
 
-6. To compile the files, I pressed `Crtl-r` to access my bash history, and then I typed in `javac` and `enter` to locate the appropriate
-compiler command, `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`, from ealier. Now to run the tests, I once again
-pressed `Crtl-r` to access my bash history, and this time typed in `java -cp` to locate and run the appropriate `java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ListExamplesTests`
-command from earlier. As we can see, the tests failed. 
+6. To compile the files, I pressed `Crtl-r` to access my bash history, and then I typed in `javac` and hit `<enter>` to locate the 
+appropriate compiler command, `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`, from ealier. Then hit `<enter>` to 
+compile. Now to run the tests, I once againpressed `Crtl-r` to access my bash history, and this time typed in `java -cp` to locate and run 
+the appropriate `java -cp .;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore ListExamplesTests`command 
+from earlier and hit `<enter>`. As we can see, the tests failed. 
 ![lab7 failed tests](lab7-test-fail.png)
 
-7. Now we need to change `index1` to `index2` at the end of the `merge` method. First step is to type `vim ListExamples.java` to open the file 
-in `vim`. Next, type `43j` to jump to line 43, where the error is. Then I pressed `e`, which jumps to the end of the word, which so happened
-to place me on the exact character that needs to be changed. Then type `r` and `2`, replacing the `1` with a `2`. Finally, tpye `:wq` to 
-save and exit. 
+7. Now we need to change `index1` to `index2` at the end of the `merge` method. First step is to type `vim ListExamples.java` then hit `<enter>` to open the file in `vim`. Next, type `43j` then hit `<enter>` to jump to line 43, where the error is. Then I pressed `e`, which jumps to the end of the word, which so happened to place me on the exact character that needs to be changed. Then type `r` and `2`, replacing the `1` with a `2`. Finally, tpye `:wq`, `<enter>` to save and exit. 
 ![lab7-vim-fix](lab7-vim-fix.png)
 
-8. Now I pressed the `<up>` key 4 times and hit `enter` to get back to and run the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
-command. Then `<up>` 4 times again and `enter` to access and run the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
+8. Now I pressed the `<up>` key 4 times and hit `enter` to get back to and run the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit
+4.13.2.jar *.java`command. Then `<up>` 4 times again and `enter` to access and run the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-
+4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 command, running the tests in `ListExamplesTests.java`. As we can see, all tests ran and passed. 
 ![lab7-tests-success](lab7-tests-success.png)
 
-9. I can't figure out how to commit and push. I keep getting erros. 
+9. So now that the `merge` method is `ListExamples.java` has been fixed, all that's left is to add, commit, and push to my forked 
+repository. This is accomplished with the commands 
+```
+git add "ListExamples.java" 
+git commit -m "Corrected merge method" 
+git push
+```
+Obviously I performed `<enter>` after each command. 
 ![lab7-commit-push](lab7-commit-push.png)
+As we can see, I was having some trouble with password authentication for my first two push attempts. To get around this, I created a temporary personal access token on GitHub just for this task. To do this I went to my GitHub account > Settings > Developer Settings > Personal access tokens > Generate new token. All I wanted to use this token for was to `push` to my repository, so I only selected the `repo` scope for this token, and generated it. Then it was as simple as copying the token, running `git push` again, and this time pasting the token instead of my account password. As we see in the above image, my token worked and I successfully pushed my changes to my forked `lab7` repository. 
 
 
 
